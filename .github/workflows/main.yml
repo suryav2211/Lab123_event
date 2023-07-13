@@ -1,5 +1,5 @@
 name: my_context
-on: 
+on:
  issues:
     types: 
       - opened  
