@@ -1,7 +1,7 @@
 name: my_test
-on: 
+on:
  issues:
-    types: 
+    types:
       - opened  
 jobs:
   print_context:
