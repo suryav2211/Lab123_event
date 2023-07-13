@@ -14,4 +14,3 @@ jobs:
           CONTEXT_EVENT: ${{ toJSON(github.event) }}
         run: |
           echo $CONTEXT_EVENT
-          echo This workflow on ${{ github.repository }} was started by ${{ github.surya }}
