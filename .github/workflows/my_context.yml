@@ -1,7 +1,6 @@
-name: Issues
-
-on: [push]
-  issues:
+name: my_context
+on: 
+ issues:
     types: 
       - opened
   
@@ -10,7 +9,7 @@ jobs:
     name: Inspect issue
     runs-on: ubuntu-latest
     steps:
-      - env: Inspect issue
+      - env:
           CONTEXT_EVENT: ${{ toJSON(github.event) }}
         run: |
           echo $CONTEXT_EVENT
